@@ -22,8 +22,8 @@ const httpOptions = {
     }
   
     /** GET jobs from the server */
-    getHeroes(): Observable<Heroes[]> {
-      return this.http.get<Heroes[]>(this.jobsUrl)
+    getHeroes(): Observable<Heroes> {
+      return this.http.get<Heroes>(this.jobsUrl)
         .pipe();
     }
   }

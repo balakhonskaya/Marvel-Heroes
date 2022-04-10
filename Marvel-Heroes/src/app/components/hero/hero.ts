@@ -1,16 +1,22 @@
 export interface Heroes {
     data: {
         total: 'number',
-        results: [
-            {
-            id: { type: 'number' },
-            name: { type: 'string' },
-            description: {type: 'string' },
-            thumbnail: {
-                path: 'string',
-                extension: 'string'
-            },
-            }
-        ]
+        results: Results[]
     }
 }
+
+export interface Results {
+        id: 'number',
+        name:'string',
+        description: 'string',
+        thumbnail: 
+        {
+            path: 'string',
+            extension: 'string'
+        }
+  }
+
+  export interface Thumbnail {
+    path: 'string',
+    extension: 'string'
+  }
